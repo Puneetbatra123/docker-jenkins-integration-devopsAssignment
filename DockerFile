@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD C:\Users\puneet.batra@sap.com\.jenkins\workspace\jenkins-docker-integration-devopsAssignment\target\ docker-jenkins-integration-devopsAssignment.jar
+ADD target/docker-jenkins-integration-devopsAssignment.jar docker-jenkins-integration-devopsAssignment.jar
 ENTRYPOINT ["java","-jar","/docker-jenkins-integration-devopsAssignment.jar"]
